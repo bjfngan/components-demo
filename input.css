@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  section {
+    @apply items-center justify-center space-y-20 min-h-screen pt-40;
+  }
+}
+
+body {
+  background-image: url('images/background.jpg');
+  background: no-repeat;
+}
