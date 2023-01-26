@@ -7,22 +7,39 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Components Demo</title>
   </head>
-  <body class=" space-y-6 md:space-y-24 p-20">
-    
-    <!--Menu-->
-    <header>
-      <h3 class="text-center text-4xl">Component Examples</h3>
-      <div
-      class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10"
-      >
-      <a href="#login" class="hover:text-slate-600 hover:scale-105">Login Modal</a>
-      <a href="#product" class="hover:text-slate-600 hover:scale-105">Product Card</a>
-      <a href="#pricing" class="hover:text-slate-600 hover:scale-105">Pricing Cards</a>
-    </header>
+  <body>
+    <nav
+      class="flex flex-col md:flex-row items-center justify-between w-full shadow-lg p-8 top-0 md:sticky z-50"
+    >
+      <div class="flex text-center mr-6">
+        <span class="font-semibold text-2xl tracking-tight"
+          >Component Examples</span
+        >
+      </div>
 
-  </div>
-</header>
-
+      <div class="w-full block items-center md:flex md:w-auto">
+        <div class="text-md text-center">
+          <a
+            href="#login"
+            class="block mt-4 hover:text-cyan-700 lg:inline-block md:mt-0 mr-4"
+          >
+            Login Modal
+          </a>
+          <a
+            href="#product"
+            class="block mt-4 hover:text-cyan-700 lg:inline-block md:mt-0 mr-4"
+          >
+            Product Card
+          </a>
+          <a
+            href="#price"
+            class="block mt-4 hover:text-cyan-700 md:inline-block md:mt-0"
+          >
+            Price Cards
+          </a>
+        </div>
+      </div>
+    </nav>
     <!--Login Model Component-->
     <section id="login">
       <h3 class="text-center text-4xl">Login Modal</h3>
@@ -193,14 +210,16 @@
     </section>
 
     <!--Pricing Cards-->
-    <section id="pricing">
+    <section id="price">
       <h3 class="text-center text-4xl mt-12">Pricing Cards</h3>
       <div class="flex items-center justify-center">
         <div
           class="flex flex-col my-6 space-y-6 md:space-y-0 md:space-x-6 md:flex-row md:my-0"
         >
           <!--Col 1-->
-          <div class="rounded-xl bg-white p-12 border border-slate-400 shadow-xl">
+          <div
+            class="rounded-xl bg-white p-12 border border-slate-400 shadow-xl"
+          >
             <!--Upper container-->
             <div class="text-center uppercase">Basic</div>
             <h2 class="mt-10 font-serif text-5xl text-center">100GB</h2>
@@ -298,7 +317,9 @@
             </div>
           </div>
           <!---Col 3-->
-          <div class="rounded-xl bg-white p-12 border border-slate-400 shadow-xl">
+          <div
+            class="rounded-xl bg-white p-12 border border-slate-400 shadow-xl"
+          >
             <!--Upper container-->
             <div class="text-center uppercase">Premium</div>
             <h2 class="mt-10 font-serif text-5xl text-center">2TB</h2>
